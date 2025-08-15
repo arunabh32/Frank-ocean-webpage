@@ -1,0 +1,87 @@
+body{
+    background-color:pink;
+}
+h3, p {
+  font-family: 'Noto Serif Devanagari', serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+
+
+img{
+    width :30%;
+    margin:calc(10%/6);
+     transition: transform 1s ease;
+}
+img:hover{
+    box-shadow: 0 0 10px red;
+    transform: scale(1.1);
+}
+h1,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 10%;
+}
+h3{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    
+}
+
+
+.btn-link:hover {
+  background-color: #0d8ddb;         /* Darker shade on hover */
+}
+
+.btn-link:active {
+  background-color: #0a6cae;         /* Even darker when clicked */
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: #ffb6c1;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    font-size: clamp(12px, 2vw, 15px);
+}

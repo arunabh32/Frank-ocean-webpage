@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Blog</title>
+    <link rel="stylesheet" href="frank.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .flip-card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .flip-card-back {
+            background-color: #ff7fa2;
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Frankly Oceanny</nav>
+    <div class="image-grid">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/ferrari.jpg" alt="Ferrari">
+                </div>
+                <div class="flip-card-back">
+                    <h3>White Ferrari</h3>
+                    <p>Frank Ocean’s White Ferrari is a tender reflection on young love, memory, and impermanence. Through snapshots of a quiet car ride and moments left unsaid, the song captures the beauty of what was and the acceptance that it couldn’t last — with a wistful thought that maybe, in another life, it could have.</p>
+               <a href="https://www.youtube.com/watch?v=Dlz_XHeUUis" target="_blank">LISTEN Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://live.staticflickr.com/4307/35447827534_c8c1af7353_w.jpg" alt="Street View">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Street's View</h3>
+                    <p>Reddit Fan Moments
+
+“An album that changed the way I looked at life.”
+— u/[anonymous] 
+Reddit
+
+“Made both summers for me 16’ and 17’, saw him live in 17’ at a festival… everything was perfect for a second. Thanks Frank ❤️‍🔥”
+— u/[anonymous] 
+Reddit
+
+“it saved my life.”
+— u/[anonymous] 
+Reddit</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/nights.jpg" alt="Nights">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Nights</h3>
+                    <p>Frank Ocean’s Nights is a two-part journey through personal change, shifting from bright, rhythmic recollections to a slow, introspective haze. The track captures the transition from youthful hustle and relationships to solitary nights filled with reflection. Its beat switch mirrors the emotional shift — from outward energy to inward contemplation — making it feel like a snapshot of growth, loss, and survival in the quiet hours.</p>
+               <a href="https://www.youtube.com/watch?v=r4l9bFqgMaQ&list=RDr4l9bFqgMaQ&start_radio=1" target="_blank">LISTEN Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/hindi-frank.jpg" alt="Hindi Frank">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Thinking about you</h3>
+                    <p>"हाँ, बिल्कुल याद है, मैं कैसे भूल सकता हूँ?
+तुम कैसा महसूस कर रहे हो?
+तुम जानते हो, तुम मेरे लिए पहली बार थे, एक नया एहसास।
+यह कभी पुराना नहीं होगा, न मेरी आत्मा में,
+न मेरे जज़्बे में — इसे ज़िंदा रखूँगा।"
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/tshirt.jpg" alt="T-shirt">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Frank merch</h3>
+                    <p>Carry a piece of Frank’s world — wear the vibes, feel the waves.</p>
+                    <a href="https://blonded.co/" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/stage.jpg" alt="Stage">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Frank ocean if he ever performs!!</h3>
+                    <p>Frank ocean if he ever performs!!</p>
+                    <a href="https://www.songkick.com/artists/4673933-frank-ocean" target="_blank">CATCH HIM LIVE!</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/nikes.jpg" alt="Nikes">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Nikes</h3>
+                    <p>Frank Ocean’s Nikes opens Blonde in a surreal haze, blending grief, love, and sharp critique of materialism. With lines like “RIP Trayvon, that na look just like me” and “These b**s want Nikes, they looking for a check,” he contrasts human loss with consumer desire. The pitched-up vocals and drifting production create a liminal space — part confession, part cultural snapshot — where beauty, tragedy, and capitalism collide.</p>
+                         <a href="https://www.youtube.com/watch?v=diIFhc_Kzng&list=RDdiIFhc_Kzng&start_radio=1" target="_blank">LISTEN Now</a>
